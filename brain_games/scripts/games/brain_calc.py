@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 import prompt
 from random import randint
+from brain_games.my_function import welcome
 
 
 def my_calc():
-    print('Welcome to the Brain Games!')
+    welcome()
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
     print('What is the result of the expression?')
