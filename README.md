@@ -4,3 +4,4 @@
 https://asciinema.org/a/7OyANTZiMcVZ8ekZH2G0GGSAc
 https://asciinema.org/a/AZIn1lJKrIvNGucJkTKcnHa7b
 https://asciinema.org/a/w6ZpBDkTo2BKtxamQZiepBt7I
+https://asciinema.org/a/6PcN5ctFp2W8kPfQrRuHgfMca

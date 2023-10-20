@@ -16,7 +16,25 @@ def my_gcd():
     f_num = prompt.integer('Your answer: ')
     if f_num == math.gcd(l_num, r_num):
         print('Correct!')
-        print('Congratulations, ' + name + '!')
+        l_num2 = randint(0, 100)
+        r_num2 = randint(0, 100)
+        print('Question: ', str(l_num2), str(r_num2))
+        sec_num = prompt.integer('Your answer: ')
+        if sec_num == math.gcd(l_num2, r_num2):
+            print('Correct!')
+            l_num3 = randint(0, 100)
+            r_num3 = randint(0, 100)
+            print('Question: ', str(l_num3), str(r_num3))
+            th_num = prompt.integer('Your answer: ')
+            if th_num == math.gcd(l_num3, r_num3):
+                print('Correct!')
+                print('Congratulations, ' + name + '!')
+            else:
+                print("'" + str(f_num) + "'" + " is wrong answer ;(. Correct answer was " + "'" + str(math.gcd(l_num3, r_num3)) + "'")
+                print("Let's try again, " + name + "!")
+        else:
+            print("'" + str(f_num) + "'" + " is wrong answer ;(. Correct answer was " + "'" + str(math.gcd(l_num2, r_num2)) + "'")
+            print("Let's try again, " + name + "!")
     else:
         print("'" + str(f_num) + "'" + " is wrong answer ;(. Correct answer was " + "'" + str(math.gcd(l_num, r_num)) + "'")
         print("Let's try again, " + name + "!")
