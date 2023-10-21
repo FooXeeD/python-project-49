@@ -5,24 +5,23 @@ from brain_games.my_function import welcome
 
 
 def my_calc():
-    welcome()
-    name = prompt.string('May I have your name? ')
+    name = str(welcome())
     print('Hello, ' + name + '!')
     print('What is the result of the expression?')
-    l_num = randint(1, 100)
-    r_num = randint(1, 100)
+    l_num = randint(0, 100)
+    r_num = randint(0, 100)
     print('Question: ' + str(l_num) + '+' + str(r_num))
     f_num = prompt.integer('Your answer: ')
     if f_num == l_num + r_num:
         print('Correct!')
-        l_num2 = randint(1, 100)
-        r_num2 = randint(1, 100)
+        l_num2 = randint(0, 100)
+        r_num2 = randint(0, 100)
         print('Question: ' + str(l_num2) + '-' + str(r_num2))
         sec_num = prompt.integer('Your answer: ')
         if sec_num == l_num2 - r_num2:
             print('Correct!')
-            l_num3 = randint(1, 100)
-            r_num3 = randint(1, 100)
+            l_num3 = randint(0, 100)
+            r_num3 = randint(0, 100)
             print('Question: ' + str(l_num3) + '*' + str(r_num3))
             th_num = prompt.integer('Your answer: ')
             if th_num == l_num3 * r_num3:

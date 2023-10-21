@@ -4,8 +4,7 @@ from brain_games.my_function import welcome
 
 
 def my_progression():
-    welcome()
-    name = prompt.string('May I have your name? ')
+    name = str(welcome())
     print('Hello, ' + name + '!')
     print('What number is missing in the progression?')
     lst = [i for i in range(0, 20, 2)]

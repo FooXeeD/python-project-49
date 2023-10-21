@@ -6,8 +6,7 @@ from brain_games.my_function import welcome
 
 
 def my_gcd():
-    welcome()
-    name = prompt.string('May I have your name? ')
+    name = str(welcome())
     print('Hello, ' + name + '!')
     print('Find the greatest common divisor of given numbers.')
     l_num = randint(0, 100)
