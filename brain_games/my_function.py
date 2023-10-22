@@ -1,17 +1,25 @@
 import prompt
 
 
-def welcome():
+def my_games(mygames):
+    NUM_MIN = 1
+    NUM_MAX = 100
+    ROUND_COUNT = 3
+
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    return name
+    print('Hello, ' + str(name) + '!')
+    print(mygames.INFO)
 
-
-def check_prime(num):
-    if num < 2:
-        return False
-    for i in range(2, int(num ** 0.5 + 1)):
-        if num % i == 0:
-            return False
-    else:
-        return True
+    for _ in range(ROUND_COUNT):
+        question, correct_answer = mygames.random_generation(NUM_MIN, NUM_MAX)
+        print('Question: ' + str(question))
+        answer = prompt.string('Your answer: ')
+        if answer == correct_answer:
+            print('Correct!')
+        else:
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'")
+            print(f"Let's try again, {name}!")
+            return
+    print('Congratulations, ' + str(name) + '!')
