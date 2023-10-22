@@ -3,9 +3,9 @@ from brain_games.games import my_prime
 from brain_games.my_function import my_games
 
 
-def main():
+def py_prime():
     my_games(my_prime)
 
 
 if __name__ == '__main__':
-    main()
+    py_prime()
