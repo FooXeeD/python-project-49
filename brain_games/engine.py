@@ -12,11 +12,11 @@ def games(games):
     for _ in range(ROUND_COUNT):
         question, answer = games.generate_round(games.NUM_MIN, games.NUM_MAX)
         print('Question: ' + str(question))
-        answer = prompt.string('Your answer: ')
-        if answer == answer:
+        your_answer = prompt.string('Your answer: ')
+        if your_answer == answer:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. "
+            print(f"'{your_answer}' is wrong answer ;(. "
                   f"Correct answer was '{answer}'")
             print(f"Let's try again, {name}!")
             return
