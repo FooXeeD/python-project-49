@@ -2,6 +2,8 @@ from random import randint
 
 
 INFO = 'Find the greatest common divisor of given numbers.'
+NUM_MIN = 1
+NUM_MAX = 100
 
 
 def gcd(number1, number2):
@@ -13,9 +15,9 @@ def gcd(number1, number2):
     return str(number1 or number2)
 
 
-def random_generation(NUMBER_MIN, NUMBER_MAX):
-    number1 = randint(NUMBER_MIN, NUMBER_MAX)
-    number2 = randint(NUMBER_MIN, NUMBER_MAX)
+def generate_round(number_min, number_max):
+    number1 = randint(number_min, number_max)
+    number2 = randint(number_min, number_max)
     question = f'{number1} {number2}'
     correct_answer = gcd(number1, number2)
     return question, correct_answer

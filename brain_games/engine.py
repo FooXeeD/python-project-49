@@ -2,8 +2,6 @@ import prompt
 
 
 def my_games(mygames):
-    NUM_MIN = 1
-    NUM_MAX = 100
     ROUND_COUNT = 3
 
     print('Welcome to the Brain Games!')
@@ -12,7 +10,7 @@ def my_games(mygames):
     print(mygames.INFO)
 
     for _ in range(ROUND_COUNT):
-        question, correct_answer = mygames.random_generation(NUM_MIN, NUM_MAX)
+        question, correct_answer = mygames.generate_round(mygames.NUM_MIN, mygames.NUM_MAX)
         print('Question: ' + str(question))
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:

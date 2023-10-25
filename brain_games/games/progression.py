@@ -2,15 +2,17 @@ from random import randint
 
 
 INFO = 'What number is missing in the progression?'
+NUM_MIN = 1
+NUM_MAX = 100
 
 
-def random_generation(NUMBER_MIN, NUMBER_MAX):
+def generate_round(number_min, number_max):
     STEP_MIN = 1
     STEP_MAX = 10
     ELEMENT_COUNT_MIN = 5
     ELEMENT_COUNT_MAX = 10
 
-    number_start = randint(NUMBER_MIN, NUMBER_MAX)
+    number_start = randint(number_min, number_max)
     step = randint(STEP_MIN, STEP_MAX)
     elements = randint(ELEMENT_COUNT_MIN, ELEMENT_COUNT_MAX)
     element_list = []
