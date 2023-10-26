@@ -10,7 +10,7 @@ def even(number):
     return 'yes' if number % 2 == 0 else 'no'
 
 
-def generate_round(number_min, number_max):
-    number = randint(number_min, number_max)
+def generate_round():
+    number = randint(NUM_MIN, NUM_MAX)
     correct_answer = even(number)
     return number, correct_answer

@@ -15,9 +15,9 @@ def gcd(number1, number2):
     return str(number1 or number2)
 
 
-def generate_round(number_min, number_max):
-    number1 = randint(number_min, number_max)
-    number2 = randint(number_min, number_max)
+def generate_round():
+    number1 = randint(NUM_MIN, NUM_MAX)
+    number2 = randint(NUM_MIN, NUM_MAX)
     question = f'{number1} {number2}'
     correct_answer = gcd(number1, number2)
     return question, correct_answer

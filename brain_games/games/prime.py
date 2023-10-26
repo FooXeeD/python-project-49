@@ -15,7 +15,7 @@ def prime(number):
     return 'yes'
 
 
-def generate_round(number_min, number_max):
-    number = randint(number_min, number_max)
+def generate_round():
+    number = randint(NUM_MIN, NUM_MIN)
     correct_answer = prime(number)
     return number, correct_answer

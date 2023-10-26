@@ -6,13 +6,13 @@ NUM_MIN = 1
 NUM_MAX = 100
 
 
-def generate_round(number_min, number_max):
+def generate_round():
     STEP_MIN = 1
     STEP_MAX = 10
     ELEMENT_COUNT_MIN = 5
     ELEMENT_COUNT_MAX = 10
 
-    number_start = randint(number_min, number_max)
+    number_start = randint(NUM_MIN, NUM_MIN)
     step = randint(STEP_MIN, STEP_MAX)
     elements = randint(ELEMENT_COUNT_MIN, ELEMENT_COUNT_MAX)
     element_list = []
