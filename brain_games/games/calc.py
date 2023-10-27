@@ -7,6 +7,7 @@ NUM_MAX = 100
 ROUND_COUNT = 3
 OPERATOR_ALL = ['+', '-', '*']
 
+
 def generate_round():
     number1 = randint(NUM_MIN, NUM_MAX)
     number2 = randint(NUM_MIN, NUM_MAX)
