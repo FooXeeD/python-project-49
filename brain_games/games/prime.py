@@ -4,6 +4,7 @@ from random import randint
 INFO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 NUM_MIN = 1
 NUM_MAX = 100
+ROUND_COUNT = 3
 
 
 def prime(number):

@@ -4,6 +4,7 @@ from random import randint
 INFO = 'Answer "yes" if the number is even, otherwise answer "no".'
 NUM_MIN = 1
 NUM_MAX = 100
+ROUND_COUNT = 3
 
 
 def even(number):

@@ -4,6 +4,7 @@ from random import randint
 INFO = 'What number is missing in the progression?'
 NUM_MIN = 1
 NUM_MAX = 100
+ROUND_COUNT = 3
 
 
 def generate_round():
