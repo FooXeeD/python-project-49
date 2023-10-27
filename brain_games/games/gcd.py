@@ -4,7 +4,6 @@ from random import randint
 INFO = 'Find the greatest common divisor of given numbers.'
 NUM_MIN = 1
 NUM_MAX = 100
-ROUND_COUNT = 3
 
 
 def gcd(number1, number2):
