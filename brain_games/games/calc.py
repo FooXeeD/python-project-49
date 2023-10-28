@@ -3,7 +3,7 @@ from random import randint, choice
 
 INFO = 'What is the result of the expression?'
 NUM_MIN = 1
-NUM_MAX = 100
+NUM_MAX = 20
 OPERATOR_ALL = ['+', '-', '*']
 
 
@@ -16,6 +16,6 @@ def generate_round():
         correct_answer = number1 + number2
     elif operator == '-':
         correct_answer = number1 - number2
-    else:
+    elif operator == '*':
         correct_answer = number1 * number2
-    return question, correct_answer
+    return question, str(correct_answer)
