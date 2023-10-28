@@ -6,16 +6,19 @@ NUM_MIN = 1
 NUM_MAX = 100
 
 
-def prime(number):
+def is_prime(number):
     if number < 2:
-        return 'no'
+        return False
     for i in range(2, number // 2 + 1):
         if number % i == 0:
-            return 'no'
-    return 'yes'
+            return False
+    return True
 
 
 def generate_round():
     number = randint(NUM_MIN, NUM_MIN)
-    correct_answer = prime(number)
+    if is_prime(number):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return number, correct_answer

@@ -12,5 +12,10 @@ def generate_round():
     number2 = randint(NUM_MIN, NUM_MAX)
     operator = choice(OPERATOR_ALL)
     question = f'{number1} {operator} {number2}'
-    correct_answer = str(eval(question))
+    if operator == '+':
+        correct_answer = number1 + number2
+    elif operator == '-':
+        correct_answer = number1 - number2
+    else:
+        correct_answer = number1 * number2
     return question, correct_answer

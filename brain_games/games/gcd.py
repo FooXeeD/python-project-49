@@ -12,12 +12,12 @@ def gcd(number1, number2):
             number1 %= number2
         else:
             number2 %= number1
-    return str(number1 or number2)
+    return number1 or number2
 
 
 def generate_round():
     number1 = randint(NUM_MIN, NUM_MAX)
     number2 = randint(NUM_MIN, NUM_MAX)
     question = f'{number1} {number2}'
-    correct_answer = gcd(number1, number2)
+    correct_answer = str(gcd(number1, number2))
     return question, correct_answer

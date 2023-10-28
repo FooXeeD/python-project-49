@@ -7,12 +7,12 @@ ROUND_COUNT = 3
 def run_game(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, ' + str(name) + '!')
+    print(f'Hello, {name} !')
     print(game.INFO)
 
     for _ in range(ROUND_COUNT):
         question, correct_answer = game.generate_round()
-        print('Question: ' + str(question))
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
             print('Correct!')
@@ -21,4 +21,4 @@ def run_game(game):
                   f"Correct answer was '{correct_answer}'")
             print(f"Let's try again, {name}!")
             return
-    print('Congratulations, ' + str(name) + '!')
+    print(f'Congratulations, {name}!')
